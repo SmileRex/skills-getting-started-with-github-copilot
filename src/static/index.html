@@ -39,6 +39,21 @@
         </form>
         <div id="message" class="hidden"></div>
       </section>
+
+      <div class="card" id="activity-card-{{name}}">
+        <h2>{{name}}</h2>
+        <p>{{description}}</p>
+        <p><strong>Schedule:</strong> {{schedule}}</p>
+        <p><strong>Max Participants:</strong> {{max_participants}}</p>
+        <div class="participants-section">
+          <strong>Participants:</strong>
+          <ul class="participants-list">
+            <!-- Participants will be rendered here by JS -->
+          </ul>
+        </div>
+        <input type="email" placeholder="Your email" class="signup-email" />
+        <button class="signup-btn">Sign Up</button>
+      </div>
     </main>
 
     <footer>
